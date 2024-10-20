@@ -27,81 +27,82 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <div class="navbar bg-slate-100 text-primary-content justify-center">
+        <div class="navbar bg-slate-100 justify-center">
             <h1 class="heading btn btn-ghost text-xl">
                 <img class="logo" src="assets/images/logo.png" alt="logo" />Love
                 Maths
             </h1>
         </div>
         <div class="grid grid-rows-4 place-items-center">
-            <div class="game-area md:m-8 row-span-3 bg-slate-200">
-                <div class="controls-area grid grid-cols-4 grid-flow-dense">
-                    <div class="col-span-1">
+            <div class="game-area md:m-8 row-span-3 bg-slate-200 rounded-xl">
+                <div class="controls-area grid grid-cols-4 py-8">
+                    <div class="basis-1/4">
                         <button
                             data-type="addition"
-                            class="btn btn-lg btn-info btn-circle btn-outline ring-info ring-inset ring-8"
+                            class="btn btn-lg size-20 btn-info btn-circle btn-outline ring-info ring-inset ring-8"
                         >
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
+                            <i class="fa-solid fa-plus text-5xl"></i></button
+                        ><br />
                         <span class="text-xs font-sans font-black"
                             >ADDITION</span
                         >
                     </div>
-                    <div class="col-span-1">
+                    <div class="basis-1/4">
                         <button
                             data-type="subtract"
-                            class="btn btn-lg btn-success btn-circle btn-outline ring-success ring-inset ring-8"
+                            class="btn btn-lg size-20 btn-success btn-circle btn-outline ring-success ring-inset ring-8"
                         >
-                            <i class="fa-solid fa-minus"></i>
-                        </button>
+                            <i class="fa-solid fa-minus text-5xl"></i></button
+                        ><br />
                         <span class="text-xs font-sans font-black"
                             >SUBTRACT</span
                         >
                     </div>
-                    <div class="col-span-1">
+                    <div class="basis-1/4">
                         <button
                             data-type="multiply"
-                            class="btn btn-lg btn-warning btn-circle btn-outline ring-warning ring-inset ring-8"
+                            class="btn btn-lg size-20 btn-warning btn-circle btn-outline ring-warning ring-inset ring-8"
                         >
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
+                            <i class="fa-solid fa-xmark text-5xl"></i></button
+                        ><br />
                         <span class="text-xs font-sans font-black"
                             >MULTIPLY</span
                         >
                     </div>
-                    <div class="col-span-1">
+                    <div class="basis-1/4">
                         <button
                             data-type="division"
-                            class="btn btn-lg btn-error btn-circle btn-outline ring-error ring-inset ring-8"
+                            class="btn btn-lg size-20 btn-error btn-circle btn-outline ring-error ring-inset ring-8"
                         >
-                            <i class="fa-solid fa-divide"></i>
-                        </button>
+                            <i class="fa-solid fa-divide text-5xl"></i></button
+                        ><br />
                         <span class="text-xs font-sans font-black"
                             >DIVISION</span
                         >
                     </div>
                 </div>
-                <div class="question-area text-2xl flex flex-wrap">
+                <div
+                    class="question-area text-2xl flex flex-wrap place-items-center justify-center"
+                >
                     <span class="operand1 flex-none">0</span>
                     <span class="operator flex-none">x</span>
                     <span class="operand2 flex-none">0</span>
                     <span class="flex-none">=</span>
                     <div></div>
-                    <div class="join">
-                        <p class="answer-message join-item">Enter Answer:</p>
-                        <input
-                            type="number"
-                            id="answer-box"
-                            class="input join-item input-bordered input-lg w-16 grow-0 flex-auto"
-                        />
-                        <button
-                            data-type="submit"
-                            class="break-after-auto join-item btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
-                        >
-                            Submit Answer
-                        </button>
-                    </div>
+
+                    <p class="answer-message">Enter Answer:</p>
+                    <input
+                        type="number"
+                        id="answer-box"
+                        class="input input-bordered input-lg w-1/6 grow-0 flex-auto"
+                    />
                 </div>
+                <button
+                    data-type="submit"
+                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-sans font-bold btn-neutral"
+                >
+                    Submit Answer
+                </button>
             </div>
 
             <div class="score-area row-span-1 flex flex-col">
