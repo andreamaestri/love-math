@@ -1,3 +1,127 @@
+/* --------- Global style */
+
 body {
-    background-color: #fafafa;
+    background-color: white;
+    font-family: "IBM Plex Serif", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+}
+
+.logo {
+    height: 40px;
+    padding-right: 5px;
+}
+
+/* --------- Game layout */
+
+.game-area {
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    padding: 1%;
+}
+
+.question-area {
+    margin: auto;
+    padding: 50px 0;
+}
+
+.question-area span {
+    padding: 0 15px;
+}
+
+
+#score {
+    font-weight: bold;
+}
+
+#incorrect {
+    font-weight: bold;
+}
+
+.answer-message {
+    display: none;
+    font-size: 1rem;
+}
+
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+/* --------- Buttons */
+
+.btn {
+    font-family: "IBM Plex Serif", sans-serif;
+    text-transform: uppercase;
+}
+
+/* --------- Media queries */
+
+@media (max-width: 414px) {
+
+    .game-area {
+        width: 100vw;
+        height: 65vh;
+    }
+
+    .controls-area {
+        width: 100%;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .question-area span {
+        padding: 0;
+    }
+
+    .answer-message {
+        display: block;
+    }
+
+    #answer-box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-area {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .controls-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .question-area {
+        padding: 10px 0;
+    }
+
 }
